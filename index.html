@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>🎓 Campus<span>Connect</span></h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#events">Events</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <a href="#register" class="register-btn">Register</a>
+    </nav>
+
+
+    <!-- Home -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <p class="small-title">YOUR CAMPUS • YOUR EVENTS</p>
+
+            <h1>
+                Discover.<br>
+                <span>Participate.</span><br>
+                Connect.
+            </h1>
+
+            <p>
+                Find exciting events happening around your campus.
+                Meet new people, learn new skills and be part of something bigger.
+            </p>
+
+            <a href="#events" class="main-btn">
+                Explore Events →
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            🎓
+            <div>Campus Events</div>
+        </div>
+
+    </section>
+
+
+    <!-- Events -->
+    <section id="events">
+
+        <p class="small-title">WHAT'S HAPPENING</p>
+
+        <h2 class="section-title">Upcoming Events</h2>
+
+        <div class="events">
+
+            <div class="card">
+                <div class="event-icon">💻</div>
+
+                <span>TECH</span>
+
+                <h3>Tech Hackathon</h3>
+
+                <p>📅 September 25, 2026</p>
+
+                <p>
+                    Build something amazing and showcase your skills.
+                </p>
+
+                <button onclick="showDetails('Tech Hackathon')">
+                    View Details
+                </button>
+            </div>
+
+
+            <div class="card">
+                <div class="event-icon">🎨</div>
+
+                <span>WORKSHOP</span>
+
+                <h3>Design Workshop</h3>
+
+                <p>📅 September 28, 2026</p>
+
+                <p>
+                    Learn modern UI/UX design and create better experiences.
+                </p>
+
+                <button onclick="showDetails('Design Workshop')">
+                    View Details
+                </button>
+            </div>
+
+
+            <div class="card">
+                <div class="event-icon">🎵</div>
+
+                <span>CULTURAL</span>
+
+                <h3>Cultural Fest</h3>
+
+                <p>📅 October 2, 2026</p>
+
+                <p>
+                    Music, dance, fun and unforgettable campus moments.
+                </p>
+
+                <button onclick="showDetails('Cultural Fest')">
+                    View Details
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <p class="small-title">WHY CAMPUSCONNECT?</p>
+
+        <h2>More than just events —<br>it's a community.</h2>
+
+        <div class="benefits">
+
+            <div>
+                <div class="big-icon">🎓</div>
+                <h3>LEARN</h3>
+                <p>Gain new skills and explore your interests.</p>
+            </div>
+
+            <div>
+                <div class="big-icon">🤝</div>
+                <h3>CONNECT</h3>
+                <p>Meet new people and build useful networks.</p>
+            </div>
+
+            <div>
+                <div class="big-icon">🚀</div>
+                <h3>GROW</h3>
+                <p>Discover opportunities and shape your future.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Registration -->
+    <section id="register">
+
+        <p class="small-title">JOIN THE EXPERIENCE</p>
+
+        <h2 class="section-title">Register for an Event</h2>
+
+        <form onsubmit="registerUser(event)">
+
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Choose Event</label>
+
+            <select required>
+                <option value="">Select an event</option>
+                <option>Tech Hackathon</option>
+                <option>Design Workshop</option>
+                <option>Cultural Fest</option>
+            </select>
+
+            <button class="main-btn" type="submit">
+                Register Now →
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <p class="small-title">GET IN TOUCH</p>
+
+        <h2>Have a Question?</h2>
+
+        <p>
+            We'd love to hear from you.
+            Reach out to us and we'll get back to you soon.
+        </p>
+
+        <p>📧 campusconnect@example.com</p>
+
+        <p>📍 College Campus, Main Building</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>🎓 Campus<span>Connect</span></h3>
+
+        <p>© 2026 CampusConnect. All rights reserved.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
